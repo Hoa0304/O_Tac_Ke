@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    #main{
+        background-image: url("https://previews.123rf.com/images/famveldman/famveldman1606/famveldman160600026/57722856-little-boy-playing-in-rainy-summer-park-child-with-colorful-rainbow-umbrella-waterproof-coat-and-boo.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        border-radius: 40px;
+    }
+    .psub{
+        
+        height: 650px;
+        width: 1000px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 100px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .x{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    .mau{
+        display: flex;
+    }
+    .mau1{
+        background-image: url('https://media.istockphoto.com/id/1326994481/vi/vec-to/tai-m%C3%A8o-ph%E1%BA%B3ng-vector.jpg?s=170667a&w=0&k=20&c=jz2M6NMQTcoRt64-tYQUkO2pJybu5A4ig1P34MPnUko=');
+        background-size: cover;
+        background-color: red; 
+        border: 2px solid black;
+    }
+    .mau2{
+        background-image: url('https://media.istockphoto.com/id/1191995828/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-c%C3%A1nh-d%C6%A1i-ho%E1%BA%B7c-c%C3%A1nh-r%E1%BB%93ng.jpg?s=612x612&w=is&k=20&c=b1wkvIjGgNPFlTRlsaOmZ-rOvqecJkVb8x4w7mURDVo=');
+       background-size: cover;
+        background-color: pink; 
+        border: 2px solid black;
+    }
+    .mau3{
+        background-image: url('https://symbols.vn/wp-content/uploads/2021/11/Mau-ki-tu-o-du-dep.jpg');
+        background-size: cover;
+        background-color: yellow; 
+        border: 2px solid black;
+    }
+    .mau4{
+        background-size: cover;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV7jwTveWTLALfhHZYTEVDoA1Z-iWPjk-VvDKTGd6FGaDbV1UdXkcxLnsZ00zv7FacGjM&usqp=CAU');
+        background-color: orange; 
+        border: 2px solid black;
+    }
+    .mau5{
+        background-image: url('https://png.pngtree.com/png-vector/20210227/ourlarge/pngtree-vector-rabbit-ears-png-image_2970007.jpg');
+        background-size: cover;
+        background-color: brown; 
+        border: 2px solid black;
+
+    }
+    .mau6{
+        background-image: url('https://static.vecteezy.com/system/resources/previews/024/155/466/original/tricolor-tassel-umbrella-icon-in-flat-style-vector.jpg');
+        background-size: cover  ;
+        background-color: black; 
+        border: 2px solid black;
+    }
+    .mau7{
+        background-size: cover;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/4551/4551810.png');
+        background-color: white; 
+        border: 2px solid black;
+    }
+    .mau8{
+        background-image: url('https://media.istockphoto.com/id/1219844000/vi/vec-to/vector-c%E1%BB%A7a-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-thanh-ki%E1%BA%BFm-ch%C3%A9o-thi%E1%BA%BFt-k%E1%BA%BF-ph%E1%BA%B3ng-bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-thanh-ki%E1%BA%BFm-vector-t%E1%BB%91t-nh%E1%BA%A5t.jpg?s=1024x1024&w=is&k=20&c=CEnIuBEBbr2Rw_iZ6Xuqa7IaWroXyiTzELme2POmLTE=');
+  background-size: cover;
+        background-color: green; 
+        border: 2px solid black;
+
+    }
+    .mau9{
+        background-size: cover;
+        background-image: url('https://media.istockphoto.com/id/1019093124/vi/vec-to/bi%E1%BB%83u-t%C6%B0%E1%BB%A3ng-c%C3%A2y-tre.jpg?s=1024x1024&w=is&k=20&c=VibIh5P44RNzjUP5LyRVxSQu6xCI7hGXLXpRLVaezCo=');
+        background-color: white; 
+        border: 2px solid black;
+    }
+   .x:hover{
+    border: 5px blue solid;
+   }
+.mau1:hover{
+    cursor: pointer;
+}
+.mau2:hover{
+    cursor: pointer;
+}
+.mau3:hover{
+    cursor: pointer;
+}
+.mau4:hover{
+    cursor: pointer;
+}
+.mau5:hover{
+    cursor: pointer;
+}
+.mau6:hover{
+    cursor: pointer;
+}
+.mau7:hover{
+    cursor: pointer;
+}
+.mau8:hover{
+    cursor: pointer;
+}
+.mau9:hover{
+    cursor: pointer;
+}
+.mau1x{
+        background-color: red; 
+        border: 2px solid black;
+    }
+    .mau2x{
+        background-color: pink; 
+        border: 2px solid black;
+    }
+    .mau3x{
+        background-color: yellow; 
+        border: 2px solid black;
+    }
+    .mau4x{
+        background-color: orange; 
+        border: 2px solid black;
+    }
+    .mau5x{
+        background-color: brown; 
+        border: 2px solid black;
+
+    }
+    .mau6x{
+        background-color: black; 
+        border: 2px solid black;
+    }
+    .mau7x{
+        background-color: violet; 
+        border: 2px solid black;
+    }
+    .mau8x{
+        background-color: green; 
+        border: 2px solid black;
+
+    }
+    .mau9x{
+        background-color: white; 
+        border: 2px solid black;
+    }
+.mau1x:hover{
+    cursor: pointer;
+}
+.mau2x:hover{
+    cursor: pointer;
+}
+.mau3x:hover{
+    cursor: pointer;
+}
+.mau4x:hover{
+    cursor: pointer;
+}
+.mau5x:hover{
+    cursor: pointer;
+}
+.mau6x:hover{
+    cursor: pointer;
+}
+.mau7x:hover{
+    cursor: pointer;
+}
+.mau8x:hover{
+    cursor: pointer;
+}
+.mau9x:hover{
+    cursor: pointer;
+} 
+.trai{
+        height: 90%;
+        width: 45%;
+        /* background-color: ; */
+        margin: 40px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* display: none; */
+        float: left;
+    }
+    .phai{
+        height: 90%;
+        width: 45%;
+        /* background-color: rgb(242, 171, 231); */
+        margin: 40px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        /* display: none; */
+    }
+.active{
+    display: none;
+}
+.traix .active{
+        height: 90%;
+        width: 45%;
+        /* background-color: ; */
+        margin: 40px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .phaix .active{
+        height: 90%;
+        width: 45%;
+        /* background-color: rgb(242, 171, 231); */
+        margin: 40px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* display: none; */
+    }
+@media only screen and (max-width:480px){
+    #main{
+        background-image: url("https://previews.123rf.com/images/famveldman/famveldman1606/famveldman160600026/57722856-little-boy-playing-in-rainy-summer-park-child-with-colorful-rainbow-umbrella-waterproof-coat-and-boo.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 1400px;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        border-radius: 40px;
+    }
+    .psub{
+        height: 1200px;
+        width: 1000px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .trai{
+        height: 90%;
+        width: 45%;
+        /* background-color: ; */
+        margin: 0px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .phai{
+        height: 90%;
+        width: 45%;
+        /* background-color: rgb(242, 171, 231); */
+        margin: 0px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .active{
+        display: none;
+    }
+    .traix .active{
+        height: 90%;
+        width: 45%;
+        /* background-color: ; */
+        margin: 0px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .phaix .active{
+        height: 90%;
+        width: 45%;
+        /* background-color: rgb(242, 171, 231); */
+        margin: 0px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+</style>
+<body>
+   <div id="main">
+
+ <div class="psub">
+    <div class="trai ">
+     <p ><b style="font-size: 30px;">CHỌN HÌNH DÁNG CHO Ô</b></p>
+     <div class="bangmau">
+        <div class="mau">
+            <div class="mau1 x"></div>
+            <div class="mau2 x"></div>
+            <div class="mau3 x"></div>
+        </div>
+        <div class="mau">
+            <div class="mau4 x"></div>
+            <div class="mau5 x"></div>
+            <div class="mau6 x"></div>
+        </div>
+        <div class="mau">
+            <div class="mau7 x"></div>
+            <div class="mau8 x"></div>
+            <div class="mau9 x"></div>
+        </div>
+     </div>
+
+    </div>
+    <div class="phai">
+        
+            <div class="hinhanh">
+                <img class="imagemau" src="https://cf.shopee.vn/file/264c12c35e09070c613d701451b06057" alt="">
+            </div>
+            <button class="buttoncontinue" style="margin-top: 40px;width: 90px; border-radius: 29px;background-color: red;">Tiếp tục</button>
+
+    </div>
+    <div class="traix active">
+        <p ><b style="font-size: 30px;">CHỌN MÀU CHO Ô</b></p>
+        <div class="bangmau">
+           <div class="mau">
+               <div class="mau1x x"></div>
+               <div class="mau2x x"></div>
+               <div class="mau3x x"></div>
+           </div>
+           <div class="mau">
+               <div class="mau4x x"></div>
+               <div class="mau5x x"></div>
+               <div class="mau6x x"></div>
+           </div>
+           <div class="mau">
+               <div class="mau7x x"></div>
+               <div class="mau8x x"></div>
+               <div class="mau9x x"></div>
+           </div>
+        </div>
+   
+       </div>
+       <div class="phaix active">
+           
+               <div class="hinhanh">
+                   <img class="hinhanhkieudang" src="https://cf.shopee.vn/file/264c12c35e09070c613d701451b06057" alt="">
+               </div>
+               <button class="buttonluu" style="margin-top: 40px;width: 90px; border-radius: 29px;background-color: red;">LƯU</button>
+   
+       </div>
+ </div>
+   </div>
+      
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script>
+     const mau1x = document.querySelector('.mau1');
+    //  const mau1x = document.querySelector('.mau1');
+const mau2 = document.querySelector('.mau2');
+const mau3 = document.querySelector('.mau3');
+const mau4 = document.querySelector('.mau4');
+const mau5 = document.querySelector('.mau5');
+const mau6 = document.querySelector('.mau6');
+const mau7 = document.querySelector('.mau7');
+const mau8 = document.querySelector('.mau8');
+const mau9 = document.querySelector('.mau9');
+const mau1xx = document.querySelector('.mau1x');
+    //  const mau1x = document.querySelector('.mau1');
+const mau2x = document.querySelector('.mau2x');
+const mau3x = document.querySelector('.mau3x');
+const mau4x = document.querySelector('.mau4x');
+const mau5x = document.querySelector('.mau5x');
+const mau6x = document.querySelector('.mau6x');
+const mau7x = document.querySelector('.mau7x');
+const mau8x = document.querySelector('.mau8x');
+const mau9x = document.querySelector('.mau9x');
+const img = document.querySelector('.imagemau');
+const saveBtn = document.querySelector('button');
+const trai = document.querySelector('.trai');
+const phai = document.querySelector('.phai');
+const traix = document.querySelector('.traix');
+const phaix = document.querySelector('.phaix');
+const imgemau = document.querySelector('.imagemau');
+const xxxxx = document.querySelector('.x');
+var laykd = document.querySelector('.imagemau');
+var kd = laykd.getAttribute('src');
+var hinhkieudang = document.querySelector('.hinhanhkieudang');
+var buttonluu = document.querySelector(".buttonluu");
+buttonluu.addEventListener("click",function(e){
+    trai.classList.toggle('active');
+traix.classList.toggle('active');
+phai.classList.toggle('active');
+phaix.classList.toggle('active');
+});
+const saveData = () => {
+trai.classList.toggle('active');
+traix.classList.toggle('active');
+phai.classList.toggle('active');
+phaix.classList.toggle('active');
+if(kd=='https://cf.shopee.vn/file/264c12c35e09070c613d701451b06057'){
+    alert('o tai meo');
+    hinhkieudang.setAttribute('src',kd);
+    
+mau1xx.addEventListener('mouseover', function(e) {
+
+hinhkieudang.setAttribute('src', 'https://cf.shopee.vn/file/cd526ade4fb2e50e5b5e984c7c4f336c');
+});
+
+mau2x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://lzd-img-global.slatic.net/g/p/4afa733a6f46f1977338d01dd1a8f8a2.jpg_720x720q80.jpg');
+});
+
+mau3x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://homegift.vn/496-large_default/du-mo-nguoc-thong-minh.jpg');
+
+});
+
+mau4x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://homegift.vn/496-large_default/du-mo-nguoc-thong-minh.jpg');
+
+});
+
+mau5x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://salt.tikicdn.com/cache/w1200/ts/product/03/8b/12/1eebf9d6759ce83d2d23347cfb877a16.jpg');
+
+});
+
+mau6x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://down-vn.img.susercontent.com/file/eabfbfeb04131e62060fab7fbe15a03d_tn');
+
+});
+
+mau7x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://vn-live-01.slatic.net/p/c04408e619ea70656e99a82e50259052.jpg');
+
+});
+
+mau8x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://lzd-img-global.slatic.net/g/p/4003079187cad1910d0bcaed962c807a.jpg_720x720q80.jpg');
+
+});
+
+mau9x.addEventListener('mouseover', function(e) {
+hinhkieudang.setAttribute('src', 'https://designlife.vn/wp-content/uploads/2019/06/D%C3%B9-Gi%E1%BA%A5y-C%E1%BB%95-Trang.jpg');
+});
+
+};
+if(kd=='https://duviet.com.vn/wp-content/uploads/2019/01/duviet-thiet-ke-va-thi-cong-du-kien-truc-canh-doi-tai-quan-2-tphcm-6.jpg'){
+alert("o canh doi");
+hinhkieudang.setAttribute('src',kd);
+};
+if(kd == 'https://homegift.vn/496-large_default/du-mo-nguoc-thong-minh.jpg'){
+    alert("o nguoc");
+    hinhkieudang.setAttribute('src',kd);
+}
+if(kd == 'https://salt.tikicdn.com/cache/w1200/ts/product/03/8b/12/1eebf9d6759ce83d2d23347cfb877a16.jpg'){
+    alert("o tai tho");
+    hinhkieudang.setAttribute('src',kd);
+}
+if(kd =='https://down-vn.img.susercontent.com/file/eabfbfeb04131e62060fab7fbe15a03d_tn' ){
+    alert('o co tua');
+    hinhkieudang.setAttribute('src',kd);
+}
+if(kd == 'https://vn-live-01.slatic.net/p/c04408e619ea70656e99a82e50259052.jpg'){
+    alert("o co quat");
+    hinhkieudang.setAttribute('src',kd);
+}
+if(kd == 'https://lzd-img-global.slatic.net/g/p/4003079187cad1910d0bcaed962c807a.jpg_720x720q80.jpg'){
+    alert("o kieu kiem");
+    hinhkieudang.setAttribute('src',kd);
+}
+if(kd =='https://designlife.vn/wp-content/uploads/2019/06/D%C3%B9-Gi%E1%BA%A5y-C%E1%BB%95-Trang.jpg' ){
+    alert('o tre');
+    hinhkieudang.setAttribute('src',kd);
+}
+
+
+};
+
+mau1x.addEventListener('mouseover', function(e) {
+
+  img.setAttribute('src', 'https://cf.shopee.vn/file/264c12c35e09070c613d701451b06057');
+  kd = img.getAttribute('src');
+});
+
+mau2.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://duviet.com.vn/wp-content/uploads/2019/01/duviet-thiet-ke-va-thi-cong-du-kien-truc-canh-doi-tai-quan-2-tphcm-6.jpg');
+  kd = img.getAttribute('src');
+});
+
+mau3.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://homegift.vn/496-large_default/du-mo-nguoc-thong-minh.jpg');
+  kd = img.getAttribute('src');
+});
+
+mau4.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://homegift.vn/496-large_default/du-mo-nguoc-thong-minh.jpg');
+  kd = img.getAttribute('src');
+});
+
+mau5.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://salt.tikicdn.com/cache/w1200/ts/product/03/8b/12/1eebf9d6759ce83d2d23347cfb877a16.jpg');
+  kd = img.getAttribute('src');
+});
+
+mau6.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://down-vn.img.susercontent.com/file/eabfbfeb04131e62060fab7fbe15a03d_tn');
+  kd = img.getAttribute('src');
+});
+
+mau7.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://vn-live-01.slatic.net/p/c04408e619ea70656e99a82e50259052.jpg');
+  kd = img.getAttribute('src');
+});
+
+mau8.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://lzd-img-global.slatic.net/g/p/4003079187cad1910d0bcaed962c807a.jpg_720x720q80.jpg');
+  kd = img.getAttribute('src');
+});
+
+mau9.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://designlife.vn/wp-content/uploads/2019/06/D%C3%B9-Gi%E1%BA%A5y-C%E1%BB%95-Trang.jpg');
+  kd = img.getAttribute('src');
+});
+
+saveBtn.addEventListener('click', saveData);
+
+    
+</script>
+<script src="config.js"></script>
+</body>
+</html>

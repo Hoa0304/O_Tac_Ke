@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ô Tắc Kè</title>
+</head>
+<body>
+    <div id="header">
+        <div id="nav">
+            <i class="fa-solid fa-bars" id="iconmenu" style="color: #ffffff;"></i>
+            <ul class="ulheader">
+                <li><a href="a">TRANG CHỦ</a></li>
+                <li><a href="b">VỀ CHÚNG TÔI</a></li>
+                <li><a href="c">SẢN PHẨM</a></li>
+                <li><a href="d">GIỎ HÀNG</a></li>
+                <li><a href="e">VIP</a></li>
+               
+            </ul>
+           
+        </div>
+
+
+    </div>
+    <div id="maincontent">
+        <iframe src="home.html" frameborder="0" scrolling="yes"></iframe>
+    </div>
+    <div id="footer">
+        <div class="theleftfooter"> <i><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> -hoattc.22ite@vku.udn.vn</i>
+        <br>
+        <br>
+        <i><i class="fa-solid fa-school" style="color: #ffffff;"></i> -Trường Đại học Công nghệ Thông tin và Truyền thông Việt - Hàn</i>
+        <br>
+        <br>
+        <i><i class="fa-solid fa-map-location" style="color: #ffffff;"></i> -470 Trần Đại Nghĩa - Hòa Quý - Ngũ Hành Sơn - Đà Nẵng - Việt Nam</i>
+        <br>
+        <br>
+        <i><i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i> -SDT : 0789469867</i>
+        </div>
+             <div class="therightfooter">
+                     <span>Điền mail vào ô này để nhận thông báo</span> <br>
+                     <br>
+                    <input type="text" placeholder="Điền mail"> <button>SEND</button>
+             </div>
+    </div>
+
+    <script src="config.js"></script> 
+    <script>
+            var iconmenu = document.getElementById('iconmenu');
+var menuan = document.querySelector('.ulheader');
+
+iconmenu.addEventListener('click', function(e) {
+    
+    menuan.classList.toggle("active");
+});
+    </script>
+</body>
+</html>

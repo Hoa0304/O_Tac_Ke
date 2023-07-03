@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    #main{
+        background-image: url("https://nationaltoday.com/wp-content/uploads/2019/02/national-umbrella-day-1200x834.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        border-radius: 40px;
+    }
+    .psub{
+        height: 650px;
+        width: 1000px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 100px;
+        display: flex;
+    }
+    .trai{
+        height: 90%;
+        width: 45%;
+        /* background-color: ; */
+        margin: 40px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .phai{
+        height: 90%;
+        width: 45%;
+        /* background-color: rgb(242, 171, 231); */
+        margin: 40px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .x{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    .mau{
+        display: flex;
+    }
+    .mau1{
+        background-color: red; 
+        border: 2px solid black;
+    }
+    .mau2{
+        background-color: pink; 
+        border: 2px solid black;
+    }
+    .mau3{
+        background-color: yellow; 
+        border: 2px solid black;
+    }
+    .mau4{
+        background-color: orange; 
+        border: 2px solid black;
+    }
+    .mau5{
+        background-color: brown; 
+        border: 2px solid black;
+
+    }
+    .mau6{
+        background-color: black; 
+        border: 2px solid black;
+    }
+    .mau7{
+        background-color: violet; 
+        border: 2px solid black;
+    }
+    .mau8{
+        background-color: green; 
+        border: 2px solid black;
+
+    }
+    .mau9{
+        background-color: white; 
+        border: 2px solid black;
+    }
+.mau1:hover{
+    cursor: pointer;
+}
+.mau2:hover{
+    cursor: pointer;
+}
+.mau3:hover{
+    cursor: pointer;
+}
+.mau4:hover{
+    cursor: pointer;
+}
+.mau5:hover{
+    cursor: pointer;
+}
+.mau6:hover{
+    cursor: pointer;
+}
+.mau7:hover{
+    cursor: pointer;
+}
+.mau8:hover{
+    cursor: pointer;
+}
+.mau9:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width:480px){
+    #main{
+        background-image: url("https://nationaltoday.com/wp-content/uploads/2019/02/national-umbrella-day-1200x834.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 1400px;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+        height: 400px;
+        width: 400px;
+        border-radius: 40px;
+    }
+    .psub{
+        height: 1200px;
+        width: 1000px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .trai{
+        height: 90%;
+        width: 45%;
+        /* background-color: ; */
+        margin: 0px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .phai{
+        height: 90%;
+        width: 45%;
+        /* background-color: rgb(242, 171, 231); */
+        margin: 0px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+</style>
+<body>
+   <div id="main">
+
+ <div class="psub">
+    <div class="trai">
+     <p ><b style="font-size: 30px;">CHỌN MÀU CHO Ô</b></p>
+     <div class="bangmau">
+        <div class="mau">
+            <div class="mau1 x"></div>
+            <div class="mau2 x"></div>
+            <div class="mau3 x"></div>
+        </div>
+        <div class="mau">
+            <div class="mau4 x"></div>
+            <div class="mau5 x"></div>
+            <div class="mau6 x"></div>
+        </div>
+        <div class="mau">
+            <div class="mau7 x"></div>
+            <div class="mau8 x"></div>
+            <div class="mau9 x"></div>
+        </div>
+     </div>
+
+    </div>
+    <div class="phai">
+        
+            <div class="hinhanh">
+                <img src="https://cf.shopee.vn/file/ba09e3d2d5b67f2fc03af16289c77fa2" alt="">
+            </div>
+            <button style="margin-top: 40px;width: 90px; border-radius: 29px;background-color: red;">LƯU</button>
+
+    </div>
+ </div>
+   </div>
+      
+      
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script>
+     const mau1x = document.querySelector('.mau1');
+    //  const mau1x = document.querySelector('.mau1');
+const mau2 = document.querySelector('.mau2');
+const mau3 = document.querySelector('.mau3');
+const mau4 = document.querySelector('.mau4');
+const mau5 = document.querySelector('.mau5');
+const mau6 = document.querySelector('.mau6');
+const mau7 = document.querySelector('.mau7');
+const mau8 = document.querySelector('.mau8');
+const mau9 = document.querySelector('.mau9');
+const img = document.querySelector('.hinhanh img');
+const saveBtn = document.querySelector('button');
+const saveData = () => {
+  const data = {
+    "colors": mau1x.style.backgroundColor,
+    "imageSrc": img.src,
+  };
+
+  // Hiển thị hộp thoại xác nhận
+  if (confirm('Bạn có chắc chắn muốn lưu dữ liệu?')) {
+
+    // Chuyển đổi dữ liệu sang định dạng JSON
+    const jsonData = JSON.stringify(data);
+
+    // Gửi dữ liệu đến máy chủ
+    fetch('data.json', {
+      method: 'POST',
+      body: jsonData,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));
+    
+  }
+};
+
+mau1x.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://cf.shopee.vn/file/ba09e3d2d5b67f2fc03af16289c77fa2');
+});
+
+mau2.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://www.mothercare.com.vn/media/catalog/product/cache/6a1e35110684b984bc2c07f0b55088b8/n/a/na451_1_1_1.webp');
+});
+
+mau3.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://vipigift.com/wp-content/uploads/2018/07/chon-o-du-cam-tay-cho-cung-hoang-dao-2.jpg');
+});
+
+mau4.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://cf.shopee.vn/file/e3e93b57557b8b703b894f3f56b6dc8b');
+});
+
+mau5.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://salt.tikicdn.com/ts/product/24/79/ae/7ab2e2d6f310744cfc86adfd11b03de4.PNG');
+});
+
+mau6.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://salt.tikicdn.com/cache/w400/ts/product/88/7c/a5/93d25a909244518eaa781ed1147b702a.PNG');
+});
+
+mau7.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://sanxuatducamtay.com/wp-content/uploads/2017/10/o-du-mo-nguoc-tim-2.jpg');
+});
+
+mau8.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://product.hstatic.net/1000252872/product/upload_861cb46bd9af4409836a61aed052bfec.jpg');
+});
+
+mau9.addEventListener('mouseover', function(e) {
+  img.setAttribute('src', 'https://cf.shopee.vn/file/d8e56066960919937dfd9c3a520bd3fa');
+});
+
+saveBtn.addEventListener('click', saveData);
+    
+</script>
+<script src="config.js"></script>
+</body>
+</html>
